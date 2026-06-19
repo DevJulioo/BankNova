@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  width: 100%;
+  border-bottom: 1px solid oklch(27.4% 0.006 286.033);
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.header > a,
+.header span {
+  display: inline-flex;
+  align-items: center;
+}
+
+span {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: yellowgreen;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: grey;
+  font-size: 1rem;
+}
+
+.navbar a:hover {
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.buttons .sign-in {
+  font-size: 1rem;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.buttons .open {
+  padding: 15px;
+  background-color: yellowgreen;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+  background: #050505;
+  overflow: hidden;
+}
+
+.hero-left {
+  max-width: 560px;
+}
+
+.hero-tag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: grey;
+  font-size: 13px;
+}
+
+.hero-tag span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: grey;
+}
+
+.hero-tag span:first-child {
+  background: grey;
+}
+
+.hero-left h1 {
+  margin-top: 22px;
+  color: #fff;
+  font-size: 74px;
+  font-weight: 600;
+  line-height: 0.97;
+  letter-spacing: -3px;
+  font-family: sans-serif;
+}
+
+.hero-left h1 em {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: yellowgreen;
+  font-weight: 500;
+}
+
+.hero-left p {
+  margin-top: 30px;
+  color: grey;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 540px;
+  font-family: sans-serif;
+}
+
+.buttons-hero {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.button-hero {
+  text-decoration: none;
+  background: yellowgreen;
+  color: white;
+  font-family: sans-serif;
+  padding: 18px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.button-hero:hover {
+  transform: translateY(-2px);
+}
+
+.see-works {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.hero-cards {
+  position: relative;
+  width: 540px;
+  height: 500px;
+}
+
+.card {
+  position: absolute;
+  border-radius: 24px;
+  overflow: hidden;
+  color: #fff;
+  font-family: Inter, sans-serif;
+}
+
+.card-black {
+  width: 335px;
+  height: 210px;
+  top: 30px;
+  left: 0px;
+  padding: 30px 24px;
+  background: #141619;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transform: rotate(-8deg);
+  z-index: 1;
+}
+
+.hero-cards .card-brand {
+  font-size: 15px;
+  font-weight: 500;
+  color: #949e9e;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.hero-cards .card-number {
+  margin-top: 30px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: 500;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.card-holder {
+  margin-top: 25px;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.hero-cards .label {
+  display: block;
+  color: #555c5c;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.hero-cards .value {
+  color: #cbd5d5;
+  font-size: 14px;
+  font-weight: 500;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.display-transactions {
+  position: absolute;
+  top: -19px;
+  right: 20px;
+  width: 215px;
+  padding: 22px;
+  background: #141619;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 22px;
+  z-index: 3;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  font-family: Inter, sans-serif;
+}
+
+.hero-cards .tx-title {
+  color: #555c5c;
+  font-size: 13px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.tx-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 14px;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.tx-item:last-child {
+  margin-bottom: 0;
+}
+
+.tx-item .tx-name {
+  color: #fff;
+  font-weight: 500;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.tx-item .tx-neg {
+  color: #717979;
+  font-weight: 500;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.tx-item .tx-pos {
+  color: yellowgreen;
+  font-weight: 600;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.card-gold {
+  width: 335px;
+  height: 210px;
+  top: 160px;
+  left: 110px;
+  padding: 30px 24px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #595037 0%, #403926 50%, #2b2619 100%);
+  transform: rotate(8deg);
+  z-index: 2;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.card-gold .card-brand {
+  color: #a39678;
+}
+
+.card-gold .label {
+  color: #7a7059;
+}
+
+.card-gold .value {
+  color: #e5dac2;
+}
+
+.chip {
+  position: absolute;
+  top: 30px;
+  right: 24px;
+  width: 34px;
+  height: 24px;
+  border-radius: 6px;
+  background: #94855c;
+  opacity: 0.8;
+}
+
+.hero-cards .card-flag {
+  position: absolute;
+  bottom: 30px;
+  right: 24px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -0.5px;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.display-balance {
+  position: absolute;
+  left: 25px;
+  bottom: 5px;
+  width: 215px;
+  padding: 22px;
+  background: #141619;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 22px;
+  z-index: 4;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  font-family: Inter, sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.hero-cards .bal-title {
+  color: #555c5c;
+  font-size: 13px;
+  font-weight: 500;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.hero-cards .bal-value {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.hero-cards .bal-percentage {
+  margin-top: 12px;
+  color: yellowgreen;
+  font-size: 13px;
+  font-weight: 600;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
